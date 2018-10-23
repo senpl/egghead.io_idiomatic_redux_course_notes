@@ -7,6 +7,8 @@ We'll start by adding a parameter to the Route `path` called `filter`. We wrap i
 
 #### Update `Root.js`
 ```javascript
+import { Route, BrowserRouter as Router,browserHistory } from "react-router-dom";
+
 const Root = ({ store }) => (
   <Provider store={store}>
     <Router history={browserHistory}>
